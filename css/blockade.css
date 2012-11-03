@@ -1,0 +1,87 @@
+.blockade_sprites { 
+    background-image     : url(../images/blockade_sprite.jpg); 
+    background-color     : transparent; 
+    background-repeat    : no-repeat; 
+ } 
+ 
+ #blockade_sprite0_jpg {
+    background-position: 0 0;
+    height: 121px;
+    left: 671px;
+    position: absolute;
+    top: 252px;
+    width: 125px;
+    z-index: 720;
+	display:none;
+}
+ 
+ #blockade_sprite1_jpg {
+    background-position: -125px 0;
+    height: 128px;
+    left: 531px;
+    position: absolute;
+    top: 201px;
+    width: 208px;
+    z-index: 710;
+	display:none;
+} 
+#blockade_sprite2_jpg {
+    background-position: -333px 0;
+    height: 155px;
+    left: 685px;
+    position: absolute;
+    top: 347px;
+    width: 151px;
+    z-index: 740;
+	display:none;
+}
+ 
+ #blockade_sprite3_jpg {
+    background-position: -484px 0;
+    height: 104px;
+    left: 704px;
+    position: absolute;
+    top: 400px;
+    width: 182px;
+    z-index: 730;
+    display:none;
+}
+ #blockade_sprite4_jpg {
+    background-position: -689px -218px;
+    height: 71px;
+    left: 459px;
+    position: absolute;
+    top: 418px;
+    width: 93px;
+    z-index: 735;
+	display:none;
+} 
+ #blockade_sprite5_jpg {
+    background-position: -1139px 0;
+    height: 329px;
+    left: 436px;
+    position: absolute;
+    top: 200px;
+    width: 473px;
+    z-index: 700;
+}
+
+#blockade_text {
+	width:300px;
+	height:348px;
+	left:117px;
+	top:185px;
+	z-index:760;
+	position:absolute;
+	color:black;
+}
+	
+.blockade_ul {
+	margin-left:-40px; 
+	color:#923222;
+}
+
+
+.blockade_ul li {
+	padding-bottom:15px;
+}

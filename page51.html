@@ -1,0 +1,208 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from 127.0.0.1/novartis/page51.html by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 16 Jun 2011 01:42:41 GMT -->
+<head>
+<!-- saved from url=(0014)about:internet -->
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+<!--[if lt IE 7.]>
+	<script defer type="text/javascript" src="js/pngfix.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style-ie6.css" media="screen" />
+<![endif]-->
+<title>
+</title>
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.simplemodal.js"></script>
+
+
+
+  
+<script type="text/javascript">
+
+function SubmitButton(form) {
+
+	// Did he get it right?
+	
+	chosen = ""
+	len = form.radio1.length;
+
+	for (i = 0; i <len; i++) {
+		if (form.radio1[i].checked) {
+			chosen = form.radio1[i].value;
+			break;
+		}
+	}
+
+	if (chosen == "") {
+		return;
+	}
+
+
+
+	// Center the popup box
+
+	var p = $("#wrapper");
+	var offset = p.offset();
+
+    var width = parseInt($('#correct-answer').css('width'));
+    var height = parseInt($('#correct-answer').css('height'));
+
+	var myx = (1024-width)/2 + offset.left;
+	var myy = (768-height)/2 + offset.top;	
+
+	if (chosen == 3) {
+			 
+		
+			$('#correct-answer').modal({
+			opacity:25, position:[myy,myx],
+			onClose: function (dialog) {window.location.href = "page54.html";}
+			});
+	}
+	else	{
+			$('#wrong-answer').modal({
+			opacity:25, position:[myy,myx],
+			onClose: function (dialog) {window.location.href = "page54.html";}
+			});
+	}
+}
+</script>
+
+<script type="text/javascript" >
+$(document).ready(function() {
+	$("#references-wrapper").load("references.html");
+});
+
+function show_reference() {
+
+	var p1 = $("#wrapper");
+	var offset1 = p1.offset();
+
+    var width1 = parseInt($('#references-wrapper').css('width'));
+    var height1 = parseInt($('#references-wrapper').css('height'));
+
+	var myx1 = (1024-width1)/2 + offset1.left;
+	var myy1 = (768-height1)/2 + offset1.top;	
+
+	$('#references-wrapper').modal({opacity:25, position:[myy1,myx1]});
+}
+</script>
+
+<!-- Is there an overlay (used for gif animation) -->
+
+</head> 
+
+<body>
+<div id="wrapper" class="white2">
+
+<a href='page3.html' id='home' class='toplinks'>Home</a>
+<a href='javascript:show_reference()' id='references' class='toplinks'>References</a>
+
+<div id='leftarrow'>
+		<a href='page48.html'><img src='images/left-arrow-active.png'></a>
+</div>
+
+<div id='rightarrow'>
+		<img src='images/right-arrow-inactive.png'></a>
+</div>
+<div id='progress'>
+
+    <div id='progress-status' style="width:365px;">
+    </div>
+    <div id='progress-bar' style=" background: url('images/progress-bar-3.png')  no-repeat scroll 0 0 transparent;">
+    </div>
+</div> <!-- Progress Bar -->
+
+
+	<div id="title">Test what you've learned </div>
+
+
+<!-- Content begin -->
+
+<!-- Content end -->
+
+
+<!-- Quiz Begin -->
+ 
+	<div class='quiz'>
+    	<form name="myform" action="#" method="get">
+			<div class='text-quiz-question' >
+            Based on the results from the BENEFIT trial, what was/were the main risk factor(s) for PTLD?			</div><br/><br/>
+            <div class="quiz_radio">
+                            <div class='format-answer'>
+                <input  type='radio' name='radio1' value='0'><div class='text-quiz-answer'>A. Patients who were EBV (-)</div><br /><br /></input>
+				</div>
+                <div class='format-answer'>
+                <input  type='radio' name='radio1' value='1'><div class='text-quiz-answer'>B. Patients who received T-cell&mdash;depleting therapy for acute rejection</div><br /><br /></input>
+				</div>
+                <div class='format-answer'>
+                <input  type='radio' name='radio1' value='2'><div class='text-quiz-answer'>C. Patients who were both EBV (-) and had received T-cell&mdash;depleting therapy for acute rejection</div><br /><br /></input>
+				</div>
+                <div class='format-answer'>
+                <input  type='radio' name='radio1' value='3'><div class='text-quiz-answer'>D. All of the above</div><br /><br /></input>
+				</div>
+</div>
+<input type="button" id="submit-button" value="" onClick="SubmitButton(this.form)" />					
+		</form>
+    </div>
+<!-- Quiz end -->
+
+
+<!-- Is there Audio? -->
+
+<div id="footer">
+<p>Information contained in this module is for educational purposes only and is not to be discussed with customers.<br/>
+This information is for internal use only and is not to be left with, detailed from, or shown to anyone outside of Novartis Pharmaceuticals Corporation.</p>
+</div>
+
+
+ 
+
+
+
+</div> <!-- End #wrapper -->
+
+ 
+
+<!-- hidden content -->
+
+		<div id="correct-answer" >
+         <div class='popup-graphic' id='popup-graphic-check' ></div>
+       	 <div id='popup-dialog'>
+         <div class='feedback-correct'>Correct.</div>
+         <div class='correct-answer-is'>The correct answer is:</div>
+          <div class='correct-answer'>D. All of the above </div>
+          <div class='explanation-paragraph'>Of the 6 patients who developed PTLD in the BENEFIT trial, 4 had known risk factors: either patients were EBV (-), had received T-cell&mdash;depleting therapy as treatment for acute rejection, or both.<div class='footnote'>1</div></div>
+          <div class='close'>Click&nbsp;<img style="top:10px; position:relative;" src='images/close_icon.png' alt='' />&nbsp;to continue.</div>
+         </div>
+		</div>
+
+		<div id="wrong-answer" >
+         <div class='popup-graphic' id='popup-graphic-x'></div>
+       	 <div id='popup-dialog'>
+         <div class='feedback-incorrect'>Incorrect.</div>
+         <div class='correct-answer-is'>The correct answer is:</div>
+          <div class='correct-answer'>D. All of the above </div>
+          <div class='explanation-paragraph'>Of the 6 patients who developed PTLD in the BENEFIT trial, 4 had known risk factors: either patients were EBV (-), had received T-cell&mdash;depleting therapy as treatment for acute rejection, or both.<div class='footnote'>1</div></div>
+          <div class='close'>Click&nbsp;<img style="top:10px; position:relative;" src='images/close_icon.png' alt='' />&nbsp;to continue.</div>
+         </div>
+		</div>
+
+		
+<div id="references-wrapper">
+</div>        
+        
+        
+ 
+		<!-- preload the images -->
+		<div style='display:none'>
+			<img src='images/close_icon.png' alt='' />
+		</div>
+</body>
+
+<!-- Mirrored from 127.0.0.1/novartis/page51.html by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 16 Jun 2011 01:42:41 GMT -->
+</html> 
+

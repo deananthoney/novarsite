@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* CSS Document */
+.timeline {
+	
+}
+
+.timeline sup{
+	position: relative;
+	top: 0.1em;
+}
+
+.timeline .intro {
+	margin: 33px 0 0 63px;	
+	height: 65px;
+}
+
+.timeline .intro h3 {
+	color: #085967;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+}
+
+.timeline .introCopy {
+	color:#22a0b5;
+	font-size: 12px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: bold;
+	line-height: 130%;
+}
+
+.timeline .timelineDiv {
+	margin: 60px 0 0 50px;
+	height: 230px;
+	position: relative;
+}
+
+#year1954, #year1959, #year1973, #year1989, #year2004, #year2010, #year2011 {
+	width: 41px;
+	height: 11px;
+	position: absolute;
+	top: 3px;
+	display:none;
+}
+
+#year1954 {	left: 13px;}
+#year1959 {	left: 79px;}
+#year1973 {	left: 239px;}
+#year1989 {	left: 433px;}
+#year2004 {	left: 594px;}
+#year2010 {	left: 662px;}
+#year2011 {	left: 709px;}
+
+#hLine {
+	position: absolute;
+	border: none;
+	height: 5px;
+	width:1px;
+	top: 34px;
+	left: 25px;
+	display:none;
+}
+
+#vLine1, #vLine2, #vLine3, #vLine4, #vLine5, #vLine6, #vLine7 {
+	position: absolute;
+	display:block;
+	width: 2px;
+	height: 1px;
+	top: 23px;
+	display:none;
+}
+#vLine1 {left: 25px;}
+#vLine2 {left: 95px;}
+#vLine3 {left: 258px;}
+#vLine4 {left: 452px;}
+#vLine5 {left: 616px;}
+#vLine6 {left: 698px;}
+#vLine7 {left: 733px;}
+
+
+#circle1, #circle2, #circle3, #circle4, #circle5, #circle6, #circle7 {
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	top: 23px;
+	display:none;
+}
+#circle1 {left: 14px;}
+#circle2 {left: 84px;}
+#circle3 {left: 247px;}
+#circle4 {left: 441px;}
+#circle5 {left: 605px;}
+#circle6 {left: 687px;}
+#circle7 {left: 722px;}
+
+#copy1, #copy2, #copy3, #copy4, #copy5, #copy6 {
+	position: absolute;
+	top: 123px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color:#444444;
+	text-align: center;
+	display:none;
+}
+#copy1 {
+	left: 4px;
+	top: 94px;
+	width: 60px;
+}
+#copy2 {	
+	left: 35px;
+	top: 188px;
+	width: 120px;
+}
+#copy3 {	
+	left: 199px;
+	top: 91px;
+	width: 120px;
+}
+#copy4 {	
+	left: 401px;
+	top: 94px;
+	width: 120px;
+}
+
+#copy5 {	
+	left: 573px;
+	top: 150px;
+	width: 80px;
+}
+#copy6 {	
+	left: 647px;
+	top: 94px;
+	width: 80px;
+}
+#copy7 {
+	position: absolute;
+	top: 183px;
+	left: 685px;
+	width: 78px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	color:#923222;
+	font-weight: bold;
+	text-align: center;
+	display:none;
+}
+
+.btnReplay {
+	margin:76px 0 0 816px;
+	text-align: center;
+	width: 60px;
+}
+
+.btnReplay img {
+	cursor: pointer;	
+}
+
+.btnReplay div{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 2px;
+	color: #707070;
+	cursor: pointer;
+}

@@ -1,0 +1,205 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from 127.0.0.1/novartis/page45.html by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 16 Jun 2011 01:42:39 GMT -->
+<head>
+<!-- saved from url=(0014)about:internet -->
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+<!--[if lt IE 7.]>
+	<script defer type="text/javascript" src="js/pngfix.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style-ie6.css" media="screen" />
+<![endif]-->
+<title>
+</title>
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.simplemodal.js"></script>
+
+
+
+  
+<script type="text/javascript">
+
+function SubmitButton(form) {
+
+	// Did he get it right?
+	
+	chosen = ""
+	len = form.radio1.length;
+
+	for (i = 0; i <len; i++) {
+		if (form.radio1[i].checked) {
+			chosen = form.radio1[i].value;
+			break;
+		}
+	}
+
+	if (chosen == "") {
+		return;
+	}
+
+
+
+	// Center the popup box
+
+	var p = $("#wrapper");
+	var offset = p.offset();
+
+    var width = parseInt($('#correct-answer').css('width'));
+    var height = parseInt($('#correct-answer').css('height'));
+
+	var myx = (1024-width)/2 + offset.left;
+	var myy = (768-height)/2 + offset.top;	
+
+	if (chosen == 2) {
+			 
+		
+			$('#correct-answer').modal({
+			opacity:25, position:[myy,myx],
+			onClose: function (dialog) {window.location.href = "page48.html";}
+			});
+	}
+	else	{
+			$('#wrong-answer').modal({
+			opacity:25, position:[myy,myx],
+			onClose: function (dialog) {window.location.href = "page48.html";}
+			});
+	}
+}
+</script>
+
+<script type="text/javascript" >
+$(document).ready(function() {
+	$("#references-wrapper").load("references.html");
+});
+
+function show_reference() {
+
+	var p1 = $("#wrapper");
+	var offset1 = p1.offset();
+
+    var width1 = parseInt($('#references-wrapper').css('width'));
+    var height1 = parseInt($('#references-wrapper').css('height'));
+
+	var myx1 = (1024-width1)/2 + offset1.left;
+	var myy1 = (768-height1)/2 + offset1.top;	
+
+	$('#references-wrapper').modal({opacity:25, position:[myy1,myx1]});
+}
+</script>
+
+<!-- Is there an overlay (used for gif animation) -->
+
+</head> 
+
+<body>
+<div id="wrapper" class="white2">
+
+<a href='page3.html' id='home' class='toplinks'>Home</a>
+<a href='javascript:show_reference()' id='references' class='toplinks'>References</a>
+
+<div id='leftarrow'>
+		<a href='page42.html'><img src='images/left-arrow-active.png'></a>
+</div>
+
+<div id='rightarrow'>
+		<img src='images/right-arrow-inactive.png'></a>
+</div>
+<div id='progress'>
+
+    <div id='progress-status' style="width:347px;">
+    </div>
+    <div id='progress-bar' style=" background: url('images/progress-bar-3.png')  no-repeat scroll 0 0 transparent;">
+    </div>
+</div> <!-- Progress Bar -->
+
+
+	<div id="title">Test what you've learned </div>
+
+
+<!-- Content begin -->
+
+<!-- Content end -->
+
+
+<!-- Quiz Begin -->
+ 
+	<div class='quiz'>
+    	<form name="myform" action="#" method="get">
+			<div class='text-quiz-question' >
+            Compared with a CsA-based regimen, what was the renal function benefit achieved in the BENEFIT trial?			</div><br/><br/>
+            <div class="quiz_radio">
+                            <div class='format-answer'>
+                <input  type='radio' name='radio1' value='0'><div class='text-quiz-answer'>A. 4 to 6 mL/min higher mean mGFR at month 12</div><br /><br /></input>
+				</div>
+                <div class='format-answer'>
+                <input  type='radio' name='radio1' value='1'><div class='text-quiz-answer'>B. 8 to 10 mL/min higher mean mGFR at month 12</div><br /><br /></input>
+				</div>
+                <div class='format-answer'>
+                <input  type='radio' name='radio1' value='2'><div class='text-quiz-answer'>C. 13 to 15 mL/min higher mean mGFR at month 12</div><br /><br /></input>
+				</div>
+</div>
+<input type="button" id="submit-button" value="" onClick="SubmitButton(this.form)" />					
+		</form>
+    </div>
+<!-- Quiz end -->
+
+
+<!-- Is there Audio? -->
+
+<div id="footer">
+<p>Information contained in this module is for educational purposes only and is not to be discussed with customers.<br/>
+This information is for internal use only and is not to be left with, detailed from, or shown to anyone outside of Novartis Pharmaceuticals Corporation.</p>
+</div>
+
+
+ 
+
+
+
+</div> <!-- End #wrapper -->
+
+ 
+
+<!-- hidden content -->
+
+		<div id="correct-answer" >
+         <div class='popup-graphic' id='popup-graphic-check' ></div>
+       	 <div id='popup-dialog'>
+         <div class='feedback-correct'>Correct.</div>
+         <div class='correct-answer-is'>The correct answer is:</div>
+          <div class='correct-answer'>C. 13 to 15 mL/min higher mean mGFR at month 12 </div>
+          <div class='explanation-paragraph'>At 12 months, renal function was superior in patients receiving belatacept versus CsA as demonstrated by all renal measures. In addition, the impact of having higher rates of acute rejection with belatacept did not negate its renal benefits.<div class='footnote'>1</div></div>
+          <div class='close'>Click&nbsp;<img style="top:10px; position:relative;" src='images/close_icon.png' alt='' />&nbsp;to continue.</div>
+         </div>
+		</div>
+
+		<div id="wrong-answer" >
+         <div class='popup-graphic' id='popup-graphic-x'></div>
+       	 <div id='popup-dialog'>
+         <div class='feedback-incorrect'>Incorrect.</div>
+         <div class='correct-answer-is'>The correct answer is:</div>
+          <div class='correct-answer'>C. 13 to 15 mL/min higher mean mGFR at month 12 </div>
+          <div class='explanation-paragraph'>At 12 months, renal function was superior in patients receiving belatacept versus CsA as demonstrated by all renal measures. In addition, the impact of having higher rates of acute rejection with belatacept did not negate its renal benefits.<div class='footnote'>1</div></div>
+          <div class='close'>Click&nbsp;<img style="top:10px; position:relative;" src='images/close_icon.png' alt='' />&nbsp;to continue.</div>
+         </div>
+		</div>
+
+		
+<div id="references-wrapper">
+</div>        
+        
+        
+ 
+		<!-- preload the images -->
+		<div style='display:none'>
+			<img src='images/close_icon.png' alt='' />
+		</div>
+</body>
+
+<!-- Mirrored from 127.0.0.1/novartis/page45.html by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 16 Jun 2011 01:42:39 GMT -->
+</html> 
+

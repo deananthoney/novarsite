@@ -1,0 +1,120 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from 127.0.0.1/novartis/page60.html by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 16 Jun 2011 01:42:46 GMT -->
+<head>
+<!-- saved from url=(0014)about:internet -->
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+<!--[if lt IE 7.]>
+	<script defer type="text/javascript" src="js/pngfix.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style-ie6.css" media="screen" />
+<![endif]-->
+<title>
+</title>
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.simplemodal.js"></script>
+
+
+
+
+<script type="text/javascript" >
+$(document).ready(function() {
+	$("#references-wrapper").load("references.html");
+});
+
+function show_reference() {
+
+	var p1 = $("#wrapper");
+	var offset1 = p1.offset();
+
+    var width1 = parseInt($('#references-wrapper').css('width'));
+    var height1 = parseInt($('#references-wrapper').css('height'));
+
+	var myx1 = (1024-width1)/2 + offset1.left;
+	var myy1 = (768-height1)/2 + offset1.top;	
+
+	$('#references-wrapper').modal({opacity:25, position:[myy1,myx1]});
+}
+</script>
+
+<!-- Is there an overlay (used for gif animation) -->
+		<script type="text/javascript" >
+		if (document.images) {
+    		preload_image2 = new Image(830,471); 
+      		preload_image2.src="images/screen60.jpg"; 
+    	}
+
+		</script>
+
+
+</head> 
+
+<body>
+<div id="wrapper" class="white4">
+
+<a href='page3.html' id='home' class='toplinks'>Home</a>
+<a href='javascript:show_reference()' id='references' class='toplinks'>References</a>
+
+<div id='leftarrow'>
+		<a href='page59.html'><img src='images/left-arrow-active.png'></a>
+</div>
+
+<div id='rightarrow'>
+		<a href='page61.html'><img src='images/right-arrow-active.png'></a>
+</div>
+<div id='progress'>
+
+    <div id='progress-status' style="width:431px;">
+    </div>
+    <div id='progress-bar' style=" background: url('images/progress-bar-3.png')  no-repeat scroll 0 0 transparent;">
+    </div>
+</div> <!-- Progress Bar -->
+
+
+
+
+<!-- Content begin -->
+  
+	<div id="content" style="
+		height:471px; 		width:830px; top:110px; left:96px; position: absolute; z-index: 200; background: url('images/screen60.jpg') no-repeat scroll 0 0 transparent;"   
+ 	></div>
+<!-- Content end -->
+
+
+<!-- Quiz Begin -->
+<!-- Quiz end -->
+
+
+<!-- Is there Audio? -->
+
+<div id="footer">
+<p>Information contained in this module is for educational purposes only and is not to be discussed with customers.<br/>
+This information is for internal use only and is not to be left with, detailed from, or shown to anyone outside of Novartis Pharmaceuticals Corporation.</p>
+</div>
+
+
+ 
+
+
+
+</div> <!-- End #wrapper -->
+
+		
+<div id="references-wrapper">
+</div>        
+        
+        
+ 
+		<!-- preload the images -->
+		<div style='display:none'>
+			<img src='images/close_icon.png' alt='' />
+		</div>
+</body>
+
+<!-- Mirrored from 127.0.0.1/novartis/page60.html by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 16 Jun 2011 01:42:46 GMT -->
+</html> 
+
